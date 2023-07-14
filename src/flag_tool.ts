@@ -4,7 +4,7 @@ const axios = require('axios').default;
 
 export class CreateBooleanFlag extends Tool {
     name = "create_boolean_flag";
-    description = "A tool to create a boolean feature flag in LaunchDarkly";
+    description = "A tool to create a boolean feature flag in LaunchDarkly. If no flag type is specified in the prompt, assume it is boolean.";
     confirmation = false;
     inputs = [
         {
